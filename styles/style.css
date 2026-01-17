@@ -1,77 +1,96 @@
-body{
+body {
     max-width: 1170px;
     background-color: rgb(221, 235, 240);
     margin: 0 auto;
 }
-nav ul{
+
+nav ul {
     display: flex;
     gap: 50px;
 }
-nav li{
+
+nav li {
     list-style: none;
 }
-nav a{
+
+nav a {
     text-decoration: none;
     font-size: large;
     font-weight: 700;
-    color:black;
+    color: black;
     padding: 10px;
     border-radius: 20px;
     -webkit-tap-highlight-color: transparent;
 }
-nav a:hover{
+
+nav a:hover {
     background-color: lightgrey;
     border-bottom: 3px solid gray;
     cursor: pointer;
 }
-.classes{
+
+.classes {
     text-align: center;
 }
-.card-container{
+
+.card-container {
     display: flex;
     gap: 50px;
     flex-wrap: wrap;
 }
-.card{
+
+.card {
     width: 300px;
     height: auto;
     padding: 15px;
     border: 2px solid lightblue;
-    margin:0 auto;
+    margin: 0 auto;
     border-radius: 10px;
 }
-.card:hover{
+
+.card:hover {
     box-shadow: 15px 15px 15px rgb(156, 167, 171);
 }
-.card p{
+
+.card p {
     text-align: justify;
 }
-#loading{
+
+.card ul {
+    text-align: left;
+}
+
+#loading {
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: lightgray;
 }
-.button-container{
+
+.button-container {
     display: flex;
     gap: 10px;
     justify-content: center;
 }
-.button-container a button{
+
+.button-container a button {
     background-color: rgb(100, 197, 230);
     padding: 10px 15px;
     border-radius: 25px;
 }
-.button-container a{
+
+.button-container a {
     text-decoration: none;
     color: black;
     -webkit-tap-highlight-color: transparent;
 }
-#left:hover{
+
+#left:hover {
     background-color: greenyellow;
     cursor: pointer;
 }
-#right:hover{
+
+#right:hover {
     background-color: aqua;
     cursor: pointer;
 }
