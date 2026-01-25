@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Statistics and Queueing Theory</title>
     <link rel="icon" href="resources/icon.webp">
-    <link rel="stylesheet" href="styles/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-7XPN86XVTT"></script>
@@ -18,61 +18,88 @@
     gtag('config', 'G-7XPN86XVTT');
 </script>
 
-<body>
+<body class="max-w-[1170px] bg-[#ddebf0] mx-auto my-0 border-b">
     <header>
-        <nav>
-            <ul>
-                <li><a href="" style="background-color: lightgrey;">Home</a></li>
+        <nav class="mt-5">
+            <ul class="flex gap-14 justify-around">
+                <li><a href=""
+                        class="bg-[lightgray] text-[large] font-bold p-2.5 rounded-[20px] sm:hover:border-b-[3px] sm:border-b-0 border-b-[3px] border-[gray] hover:cursor-pointer">Home</a>
+                </li>
                 <li><a href="https://drive.google.com/file/d/15Lx3QVeJIZ7bVnLqwPKZuzK6iagt7Y0-/view?usp=sharing"
-                        target="_blank" rel="noopener noreferrer">Book(HK Das)</a></li>
+                        target="_blank" rel="noopener noreferrer"
+                        class="sm:hover:bg-[lightgray] sm:bg-transparent bg-[lightgray] sm:hover:border-b-[3px] sm:border-b-0 border-b-[3px] border-[gray] text-[large] font-bold p-2.5 rounded-[20px]">Book(HK
+                        Das)</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <section class="classes">
-            <img src="resources/icon.webp" alt="NDUB logo" width="200px" height="auto">
-            <h1>Statistics & Queueing Theory</h1>
-            <h3>Course Code: 0542-2105</h3>
-            <p><span><strong>Instructor:</strong></span> <br>Stanly Pius Rozario <br> Asst. Professor <br> Department of
+        <section class="text-center">
+            <img src="resources/icon.webp" alt="NDUB logo" class="h-50 w-auto mx-auto my-5 shadow-2xl rounded-[50%]">
+            <h1 class="text-4xl font-bold">Statistics & Queueing Theory</h1>
+            <h3 class="text-2xl">Course Code: 0542-2105</h3>
+            <p class="mt-5"><span><strong>Instructor:</strong></span> <br>Stanly Pius Rozario <br> Asst. Professor <br>
+                Department of
                 CSE <br> Notre Dame University Bangladesh </p>
-            <div class="card-container">
-                <div class="card">
-                    <h3>Class-1</h3>
-                    <h3>Date:- Fri,Jan 9,2026</h3>
+
+
+            <!-- Card Container -->
+            <div class="flex flex-wrap gap-[50px] mt-14 mb-14">
+
+                <!-- Card-1 -->
+                <div
+                    class="w-[300px] h-auto p-[15px] border-2 border-[lightblue] mx-auto my-0 rounded-[10px] shadow-2xl sm:shadow-none sm:hover:shadow-2xl">
+                    <h3 class="text-[20px] font-bold">Class-1</h3>
+                    <h3 class="text-[16px] font-bold">Date:- Fri,Jan 9,2026</h3>
                     <p> <strong>Topics:- </strong><br><br>Chapter-1: Statistical Technique <br> <br> Mean Methods:
-                    <ul>
-                        <li>Dirrect Method</li>
-                        <li>Shortcut Method</li>
-                        <li>Step Deviation Methods</li>
+                    <ul class="text-left ml-10">
+                        <li class="list-disc">Dirrect Method</li>
+                        <li class="list-disc">Shortcut Method</li>
+                        <li class="list-disc">Step Deviation Methods</li>
                     </ul>
                     </p>
-                    <div class="button-container">
+                    <div class="flex gap-2.5 justify-around mt-5">
                         <a href="https://drive.google.com/file/d/1Zl_nOzrQPGXHqQfWN7oyH59gmocBW326/view?usp=sharing"
-                            target="_blank" rel="noopener noreferrer"> <button id="left">Class Recording</button></a>
-                        <a target="_blank" rel="noopener noreferrer"> <button id="right"> Class Notes </button></a>
+                            target="_blank" rel="noopener noreferrer"> <button
+                                class="hover:bg-[greenyellow] active:bg-[greenyellow] hover:cursor-pointer bg-[#64c5e6] px-2.5 py-[15px] rounded-3xl font-medium">Class
+                                Recording</button></a>
+                        <a target="_blank" rel="noopener noreferrer"> <button
+                                class="hover:bg-[aqua] active:bg-[aqua] hover:cursor-pointer bg-[#64c5e6] px-2.5 py-[15px] rounded-3xl font-medium">
+                                Class Notes </button></a>
                     </div>
                 </div>
-                <div class="card">
-                    <h3>Class-2</h3>
-                    <h3>Date:- Sat,Jan 17,2026</h3>
+
+                <!-- Card-2 -->
+                <div
+                    class="w-[300px] h-auto p-[15px] border-2 border-[lightblue] mx-auto my-0 rounded-[10px] sm:hover:shadow-2xl shadow-2xl sm:shadow-none">
+                    <h3 class="text-[20px] font-bold">Class-2</h3>
+                    <h3 class="text-[16px] font-bold">Date:- Sat,Jan 17,2026</h3>
                     <p> <strong>Topics:- </strong><br><br>Chapter-1: Statistical Technique <br>
-                    <ul>
-                        <li>Median</li>
-                        <li>Mode</li>
-                        <li>Mean Deviation</li>
-                        <li>Standard Deviation</li>
-                        <li>Symmetry, Skewness</li>
-                        <li>Karl Pearson's Coefficient of Skewness</li>
+                    <ul class="text-left ml-10">
+                        <li class="list-disc">Median</li>
+                        <li class="list-disc">Mode</li>
+                        <li class="list-disc">Mean Deviation</li>
+                        <li class="list-disc">Standard Deviation</li>
+                        <li class="list-disc">Symmetry, Skewness</li>
+                        <li class="list-disc">Karl Pearson's Coefficient of Skewness</li>
                     </ul>
                     </p>
-                    <div class="button-container">
+                    <div class="flex gap-2.5 justify-around mt-5">
                         <a href="https://drive.google.com/file/d/125gulWbTAVElKY6KP5p2eCzYOCRvT0aB/view?usp=sharing"
-                            target="_blank" rel="noopener noreferrer"> <button id="left">Class Recording</button></a>
-                        <a target="_blank" rel="noopener noreferrer"> <button id="right"> Class Notes </button></a>
+                            target="_blank" rel="noopener noreferrer">
+                            <button
+                                class="hover:bg-[greenyellow] active:bg-[greenyellow] hover:cursor-pointer bg-[#64c5e6] px-2.5 py-[15px] rounded-3xl font-medium">Class
+                                Recording</button>
+                        </a>
+                        <a target="_blank" rel="noopener noreferrer"> <button button
+                                class="hover:bg-[aqua] active:bg-[aqua] hover:cursor-pointer bg-[#64c5e6] px-2.5 py-[15px] rounded-3xl font-medium">
+                                Class Notes </button></a>
                     </div>
                 </div>
-                <div class="card" id="loading">
-                    <h3>New class <br> Loading...</h3>
+
+                <!-- Loading Card -->
+                <div
+                    class="w-[300px] h-auto p-[15px] border-2 border-[lightblue] mx-auto my-0 rounded-[10px] flex justify-center items-center bg-[lightgray] shadow-2xl sm:shadow-none sm:hover:shadow-2xl">
+                    <h3 class="text-[20px] font-bold">New class <br> Loading...</h3>
                 </div>
 
             </div>
